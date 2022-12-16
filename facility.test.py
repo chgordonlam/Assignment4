@@ -25,3 +25,16 @@ class facility:
         appendFile.write("\n")
         appendFile.write(str(New_facility.FacilityName))
         appendFile.close()
+
+
+######## Lines below are used to test the methods
+option = int(input("\nFacilities Menu:\n 1 - Display Facilities list\n 2 - Add Facility\n 3 - Back to the Main Menu\n"))
+while option !=0:
+    if option == 1:
+        facility.displayFacilities(facility.displayFacilities)
+        option = int(input("Facilities Menu:\n 1 - Display Facilities list\n 2 - Add Facility\n 3 - Back to the Main Menu\n"))
+    elif option == 2:
+        facility.writeListOffacilitiesToFile(facility.writeListOffacilitiesToFile)
+        option = int(input("Facilities Menu:\n 1 - Display Facilities list\n 2 - Add Facility\n 3 - Back to the Main Menu\n"))
+    elif option == 0:
+        break
